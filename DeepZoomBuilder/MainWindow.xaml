@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="393*"/>
+            <ColumnDefinition Width="40" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="186*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Source Filename" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="10,1,10,0" Height="28" x:Name="Source" />
+        <Button Margin="4" Content="..." Grid.Row="0" Grid.Column="2" Click="Button_Click_1" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Output Image" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="10,1,10,0" Height="28" x:Name="Destination" />
+        <Button Margin="4" Content="..." Grid.Row="1" Grid.Column="2" Click="Button_Click_2" />
+        <Button Grid.Row="2" Grid.Column="1" Padding="5" Content="Create Image" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Click="Button_Click" />
     </Grid>
 </Window>
